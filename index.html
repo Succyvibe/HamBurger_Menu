@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- -----------------header--------------------------------- -->
+    <header class="header">
+        <!-- ------------Nav----------------------->
+        <nav class="navbar">
+            <a href="#Home" class="navbar_logo">SUCCESS</a>
+            <div class="navbar_collapse" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul class="navbar_nav">
+                    <li class="navbar-items">
+                        <a href="#Home" class="navbar_links active">Home</a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#About" class="navbar_links">About</a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#Services" class="navbar_links">Services</a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#Projects" class="navbar_links">Projects</a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#Contact" class="navbar_links">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <!-- ------------Nav--------------------- -->
+    </header>
+    <!-- -----------------header--------------------------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
