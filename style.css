@@ -63,7 +63,9 @@ img {
 
 /* -------------utilities----------------------------------- */
 
-.header {}
+.header {
+    position: rela
+}
 
 /* -------------------navbar--------------------------------------- */
 .navbar {
@@ -118,6 +120,88 @@ img {
 
 
 /* ------------------End-navbar--------------------------------------- */
+
+/* ------------------------Login-------------------------------- */
+.login {
+    width: 320px;
+    height: 420px;
+    background-color: 000;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    padding: 50px 30px;
+    z-index: -1;
+}
+
+
+
+.login_img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+}
+
+.login h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login p {
+    font-size: 1.6rem;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.login input[type="submit"] {
+    border: none;
+    background: rgba(0, 255, 255, 0.575);
+    border-radius: 20px;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: .5s;
+}
+
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0.349);
+
+}
+
+.login a {
+    font-size: 1.2rem;
+    color: darkgray;
+    line-height: 20px;
+}
+
+.login a:hover {
+    color: rgba(0, 255, 255, 0.575);
+}
+
+/* -----------------------End-Login-------------------------------- */
 
 /* --------------------media querries--------------------------------- */
 
